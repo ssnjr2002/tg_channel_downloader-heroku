@@ -8,7 +8,7 @@ RUN apt-get update \
  && apt-get install -y \
     bash curl sudo wget \
     python3 unzip sed \
-    python3-pip \
+    python3-pip git \
     systemd golang \
  && pip3 install \
     telethon cryptg \
