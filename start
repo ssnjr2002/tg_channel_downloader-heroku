@@ -15,4 +15,4 @@ EOF
 
 ls -R
 
-python3 /home/scriptdir/tg_channel_downloader.py
+python3 /home/tg_channel_downloader.py
