@@ -24,12 +24,11 @@ RUN apt-get clean \
 WORKDIR /home
 
 # Create required dirs:
-RUN mkdir -p /home/.config/rclone/ \
- && mkdir -p scriptdir/
+RUN mkdir -p /home/.config/rclone/
 
 # Copy files:
 COPY start /home/
-COPY tg_channel_downloader.py /home/scriptdir/
+COPY tg_channel_downloader.py /home/
 
 # Run startup script:
 CMD bash /home/start
