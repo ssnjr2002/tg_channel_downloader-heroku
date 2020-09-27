@@ -1,0 +1,33 @@
+{
+  "name": "tg-chan-dl",
+  "description": "This app does one little thing, and does it well.",
+  "keywords": ["cyka", "bylat"],
+  "repository": "https://github.com/ssnjrthegr8/tegbzn.git",
+  "stack": "container",
+  "env": {
+    "API_ID": {
+      "description": "Your telegram api id."
+    },
+    "API_HASH": {
+      "description": "Your telegram api hash."
+    },
+    "BOT_TOKEN": {
+      "description": "Your bot_token"
+    },
+    "ADMIN_ID": {
+      "description": "Your user id."
+    },
+    "GH_PVT_REPO_NAME": {
+      "description": "The name of your private github repo (it's case sensitive)."
+    },
+    "GITHUB_USER": {
+      "description": "Your github username (it's case sensitive)."
+    },
+    "GITHUB_PASS": {
+      "description": "Your github password (it's case sensitive)."
+    },
+    "DRIVE_ID": {
+      "description": "Folder ID of Teamdrive."
+    }
+  }
+}
