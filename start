@@ -13,4 +13,6 @@ service_account_file = /home/$GH_PVT_REPO_NAME/sa/*.json
 service_account_file_path = /home/$GH_PVT_REPO_NAME/sa
 EOF
 
+ls -R
+
 python3 /home/scriptdir/tg_channel_downloader.py
