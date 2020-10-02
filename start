@@ -2,9 +2,10 @@
 
 git clone https://"$GITHUB_USER":"$GITHUB_PASS"@github.com/"$GITHUB_USER"/"$GH_PVT_REPO_NAME"
 
-mv /home/$GH_PVT_REPO_NAME/session/* /home/
+cp /home/$GH_PVT_REPO_NAME/session/* /home/
+cp /home/$GH_PVT_REPO_NAME/session/* /
 
-echo Loading the config:\n
+echo Loading the config:
 echo | tee /home/.config/rclone/rclone.conf << EOF
 [GC]
 type = drive
@@ -13,6 +14,6 @@ service_account_file = /home/$GH_PVT_REPO_NAME/sa/*.json
 service_account_file_path = /home/$GH_PVT_REPO_NAME/sa
 EOF
 
-ls -R
+ls
 
 python3 /home/tg_channel_downloader.py
