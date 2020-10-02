@@ -14,11 +14,11 @@ service_account_file_path = /home/$GH_PVT_REPO_NAME/sa
 EOF
 
 sed -i \
-    -e 's/\(api_id=\).*/\1'$API_ID'/' \
-    -e 's/\(api_hash=\).*/\1'$API_HASH'/' \
-    -e 's/\(bot_token=\).*/\1'$BOT_TOKEN'/' \
-    -e 's/\(admin_id=\).*/\1'$ADMIN_ID'/' \
-    -e 's/\(drive_id=\).*/\1'$DRIVE_ID'/' \
+    -e 's/\(api_id = \).*/\1'$API_ID'/' \
+    -e 's/\(api_hash = \).*/\1'$API_HASH'/' \
+    -e 's/\(bot_token = \).*/\1'$BOT_TOKEN'/' \
+    -e 's/\(admin_id = \).*/\1'$ADMIN_ID'/' \
+    -e 's/\(drive_id = \).*/\1'$DRIVE_ID'/' \
     /home/tg_channel_downloader.py
 
 python3 /home/tg_channel_downloader.py
