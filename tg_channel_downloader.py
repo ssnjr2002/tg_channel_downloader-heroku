@@ -10,6 +10,7 @@ from telethon import TelegramClient, events, errors
 from telethon.tl.types import MessageMediaWebPage
 
 #***********************************************************************************#
+print(os.environ.get('API_ID'))
 api_id = os.environ.get('API_ID')   # your telegram api id
 api_hash = os.environ.get('API_HASH')  # your telegram api hash
 bot_token = os.environ.get('BOT_TOKEN')  # your bot_token
