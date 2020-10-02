@@ -4,6 +4,7 @@
   "keywords": ["cyka", "bylat"],
   "repository": "https://github.com/ssnjrthegr8/tegbzn.git",
   "stack": "container",
+  "formation": {"worker": {"quantity": 1, "size": "free"}},
   "env": {
     "API_ID": {
       "description": "Your telegram api id."
